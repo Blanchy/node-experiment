@@ -1,0 +1,15 @@
+.navigation-container {
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        li {
+            padding: 10px;
+            a {
+                color: white;                
+            }
+        }
+    }
+}
