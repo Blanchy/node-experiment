@@ -5,9 +5,7 @@ const toIndexFile = (req, res) => {
 }
 
 module.exports = {
-    initRoutes: function (app) {
-        app.get('/', toIndexFile);
-        app.get('/about', toIndexFile);
-        console.log('serverRoutes initRoutes')
+    initApis: function (app) {
+        console.log('api initApis')
     }    
 }

@@ -1,8 +1,8 @@
 const path = require("path");
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin'); 
-const HtmlWebpackPlugin = require('html-webpack-plugin'); 
+// const { CleanWebpackPlugin } = require('clean-webpack-plugin'); 
+// const HtmlWebpackPlugin = require('html-webpack-plugin'); 
 const isDevelopment = process.env.NODE_ENV !== 'production'
 
 module.exports = {
@@ -34,14 +34,10 @@ module.exports = {
         hotUpdateMainFilename: 'hot/hot-update.json'
     }, 
     plugins: [
-      // new webpack.HotModuleReplacementPlugin(),
       new MiniCssExtractPlugin({
         filename: isDevelopment ? '[name].css' : '[name].[hash].css',
         chunkFilename: isDevelopment ? '[id].css' : '[id].[hash].css'
       }),
-      // new WriteFilePlugin({
-      //   test: /^(?!.*(hot)).*/,
-      // }),
     ],
     watch: true,
     watchOptions: {
