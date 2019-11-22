@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-
-
 // using class
-
 class AboutTabPage extends Component {
     constructor(props) {
         super(props);

@@ -5,7 +5,7 @@ const api = require('./api/api')
 
 const app = express()
 serverRoutes.initRoutes(app)
-api.initApis(app)
+api.initApis(app, __dirname)
 
 app.use(express.static('public'))
 app.listen(3000,  () => console.log("Example app listening on port 3000"));

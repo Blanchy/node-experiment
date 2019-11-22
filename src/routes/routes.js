@@ -3,12 +3,15 @@ import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import Navigation from '../components/navigation'
 import HomeTabPage from '../tabpages/home/HomeTabPage'
 import AboutTabPage from '../tabpages/about/AboutTabPage'
+import TestList from '../tabpages/testList/TestList'
+
 
 const Routes = () => {
     return (
         <Switch>
           <Route exact path="/" component={HomeTabPage}/>
           <Route path="/about" component={AboutTabPage}/>
+          <Route path="/testList" component={TestList}/>
         </Switch>
     )
 };
