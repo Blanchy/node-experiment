@@ -1,5 +1,9 @@
 .page-layout-conatiner {
     .page-layout-header {
         background-color: rgba(68, 105, 176, 1);
+        height: 40px;
+    }
+    .page-layout-body {
+        height: calc(100vh  - 40px);
     }
 }
