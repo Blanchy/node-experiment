@@ -6,13 +6,16 @@
     .list-header {
         display: flex;
         justify-content: flex-start;
+        height: 30px;
+        background-color: #C4BDBD;
         div {
-            margin-left: 10px;
+            padding: 5px;
+            margin-left: 20px;
         }
     }
     .list-scroll-container {
         overflow-y: auto;
-        height: 100%;
+        height: calc(100%  - 30px);
         display: flex;
         justify-content: flex-start;
         .list-scroll {
@@ -20,18 +23,25 @@
             .list-row {
                 display: flex;
                 justify-content: flex-start;
+                padding: 5px 10px;
                 div {
                     margin-left: 10px;                    
                 }
                 
             }
+            .list-row:nth-child(odd) {
+                background-color: lightblue;
+            }
+            .list-row:nth-child(even) {
+                background-color: white;
+            }
         }     
     }
     .col-1 {
-        width: 100px;
+        width: 150px;
     }
     .col-2 {
-        width: 150px;        
+        width: 200px;        
     }
             
 
