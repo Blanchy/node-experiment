@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
+import { fetch } from '../../utils/commons';
 import style from './TestList.scss';
+
+// /Users/henrypolangcos/Projects/experiment/src/utils/commons.js
+// /Users/henrypolangcos/Projects/experiment/src/tabpages/testList/TestList.js
+
+
 // using class
 class TestList extends Component {
     constructor(props) {
@@ -11,9 +17,9 @@ class TestList extends Component {
 
     componentDidMount() {
         fetch('/api/customerList')
-        .then(response =>{
-            return response.json()
-        })
+        // .then(response =>{
+        //     return response.json()
+        // })
         .then(resp =>{
             console.log('data', resp)
             this.setState({customers: resp})
@@ -42,7 +48,7 @@ class TestList extends Component {
                 </div>
                 <div className="list-scroll-container">
                     <div className="list-scroll">
-                        {cust.length ? 
+                        {(cust && cust.length) ? 
                         this.renderList() : <h2>This is test list</h2>}
                     </div>
                 </div>
