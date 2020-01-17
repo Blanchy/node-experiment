@@ -9,6 +9,7 @@ module.exports = {
         app.get('/', toIndexFile);
         app.get('/about', toIndexFile);
         app.get('/testList', toIndexFile);
+        app.get('/customListDemo', toIndexFile);
         console.log('serverRoutes initRoutes')
     }    
 }

@@ -16,6 +16,9 @@ const Navigation = () => {
                     <li>
                         <Link to="/testList">Test List</Link>
                     </li>
+                    <li>
+                        <Link to="/customListDemo">Custom List</Link>
+                    </li>
                 </ul>
             </nav>
         </div>

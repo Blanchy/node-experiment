@@ -4,7 +4,7 @@ import Navigation from '../components/navigation'
 import HomeTabPage from '../tabpages/home/HomeTabPage'
 import AboutTabPage from '../tabpages/about/AboutTabPage'
 import TestList from '../tabpages/testList/TestList'
-
+import CustomListDemo from '../tabpages/customListDemo/customListDemo'
 
 const Routes = () => {
     return (
@@ -12,6 +12,7 @@ const Routes = () => {
           <Route exact path="/" component={HomeTabPage}/>
           <Route path="/about" component={AboutTabPage}/>
           <Route path="/testList" component={TestList}/>
+          <Route path="/customListDemo" component={CustomListDemo}/>
         </Switch>
     )
 };
